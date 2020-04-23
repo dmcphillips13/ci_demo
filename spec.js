@@ -33,6 +33,6 @@ describe("GET /api/users", () => {
   it("returns the users", async () => {
     const response = await _app.get("/api/users");
     expect(response.status).to.equal(200);
-    expect(response.body.length).to.equal(1);
+    expect(response.body.length).to.equal(2);
   });
 });
